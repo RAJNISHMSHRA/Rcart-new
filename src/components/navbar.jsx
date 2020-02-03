@@ -60,8 +60,9 @@ const Navbar = props => {
 
                     <div className="card-body">
                       <p>
-                        You have {bagItems.length} product
-                        in yourcart
+
+                       { bagItems?`You have ${bagItems.length} product
+                        in yourcart`:`You have 0 item in your bag`}
                       </p>
 
                       <div
